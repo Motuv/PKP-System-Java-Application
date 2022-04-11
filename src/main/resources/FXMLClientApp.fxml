@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLClientAppController">
+   <children>
+      <Label layoutX="18.0" layoutY="67.0" text="From: " />
+      <Label layoutX="38.0" layoutY="14.0" text="Witaj w systemie PKPociągi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="110.0" text="To:" />
+      <DatePicker id="date" layoutX="71.0" layoutY="148.0" />
+      <Label layoutX="9.0" layoutY="252.0" text="Train name:" />
+      <Label layoutX="496.0" layoutY="20.0" text="Available trains" />
+      <TextField fx:id="trainSearcher" layoutX="72.0" layoutY="248.0" />
+      <Label layoutX="19.0" layoutY="152.0" text="Date:" />
+      <ComboBox fx:id="departureStation" layoutX="71.0" layoutY="63.0" prefWidth="150.0" />
+      <ComboBox fx:id="arriveStation" layoutX="71.0" layoutY="106.0" prefWidth="150.0" />
+      <Label layoutX="21.0" layoutY="195.0" text="Time:" />
+      <TextField fx:id="hour" layoutX="72.0" layoutY="191.0" />
+      <Button layoutX="113.0" layoutY="294.0" mnemonicParsing="false" onAction="#findTrain" text="Find train" />
+      <Label fx:id="routeInformation" layoutX="361.0" layoutY="38.0" prefHeight="18.0" prefWidth="349.0" textAlignment="CENTER" wrapText="true" />
+      <TableView fx:id="table" layoutX="350.0" layoutY="61.0" prefHeight="200.0" prefWidth="400.0">
+      </TableView>
+      <Label layoutX="487.0" layoutY="270.0" text="Your tickets" />
+      <TableView fx:id="ticketTable" layoutX="347.0" layoutY="292.0" prefHeight="106.0" prefWidth="406.0" />
+      <Button fx:id="saveTickets" layoutX="558.0" layoutY="266.0" mnemonicParsing="false" text="Save my tickets" />
+   </children>
+</AnchorPane>
